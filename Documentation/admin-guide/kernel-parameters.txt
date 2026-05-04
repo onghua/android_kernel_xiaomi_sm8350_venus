@@ -4664,6 +4664,9 @@
 
 	rootflags=	[KNL] Set root filesystem mount option string
 
+	initramfs_options= [KNL]
+                        Specify mount options for for the initramfs mount.
+
 	rootfstype=	[KNL] Set root filesystem type
 
 	rootwait	[KNL] Wait (indefinitely) for root device to show up.
@@ -4698,8 +4701,6 @@
 			incurs a small amount of overhead in the scheduler
 			but is useful for debugging and performance tuning.
 
-<<<<<<< HEAD
-=======
 	sched_thermal_decay_shift=
 			[KNL, SMP] Set a decay shift for scheduler thermal
 			pressure signal. Thermal pressure signal follows the
@@ -4808,7 +4809,6 @@
 			non-zero "wait" parameter.  See weight_single
 			and weight_many.
 
->>>>>>> e9d338a0b179 (scftorture: Add smp_call_function() torture test)
 	skew_tick=	[KNL] Offset the periodic timer tick per cpu to mitigate
 			xtime_lock contention on larger systems, and/or RCU lock
 			contention on all systems with CONFIG_MAXSMP set.
